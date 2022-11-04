@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows:minmax(120px, auto) repeat(5, 100px);
+    background-color: #fae9dd;
+  }
+  
+  .container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #faE9DD;
+    background-color: #efd3bf;
+    outline: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .container > button:hover {
+    color: #fff;
+    background-color: #e09f74;
+  }
+  
+  .ocupaDois {
+    grid-column: span 2;
+  }
+  
+  .container > .operador {
+    color: #fff;
+    background: #a6522b;
+  }
+  
+  .container > .resultado {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background: #a6522b;
+  }
+  
+  .container > .resultado > .opAtual {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+
+  .container > .resultado > .pOperando {
+    color: #000;
+    font-size: 1.5rem;
+  }
